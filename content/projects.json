@@ -1,0 +1,44 @@
+[
+  {
+    "id": "pm25-exposure-modeling",
+    "title": "Hybrid PM2.5 Exposure Modeling & CAD Risk Prediction",
+    "description": "Engineered a two-stage hybrid ML exposure model fusing satellite-derived AOD data with ground-level PM2.5 sensor readings, significantly outperforming single-source baselines. Implemented MixedLM to model random individual effects across 1,000+ participants, propagating outputs as engineered features into XGBoost models for measurable improvements in predictive R².",
+    "techStack": ["Python", "R", "pandas", "numpy", "statsmodels", "XGBoost", "scikit-learn"],
+    "githubUrl": "https://github.com/Dzone11/pm25-exposure-modeling",
+    "liveUrl": "",
+    "featured": true
+  },
+  {
+    "id": "heat-stress-longitudinal-study",
+    "title": "Heat Stress & Infant Growth — Longitudinal ML Study",
+    "description": "Led end-to-end data science for a BMGF-funded multi-season observational cohort study. Developed and validated mixed-effects and exposure–response models to quantify heat stress impact on lactation and infant growth trajectories. Built supervised predictive models assessing omega-3 supplementation as a mitigation strategy.",
+    "techStack": ["R", "Python", "pandas", "numpy", "ggplot2", "dplyr", "scikit-learn", "Git"],
+    "githubUrl": "https://github.com/Dzone11/heat-stress-longitudinal-study",
+    "liveUrl": "",
+    "featured": true
+  },
+  {
+    "id": "nfhs-rag-assistant",
+    "title": "NFHS RAG Research Assistant — GenAI Pipeline",
+    "description": "Designed and deployed a production-style RAG pipeline using LlamaIndex to enable natural language querying of complex epidemiological datasets (100M+ data points). Engineered an intent-classification layer that dynamically adjusts retrieval depth, integrating BGE transformer embeddings with a persistent ChromaDB vector store for sub-second semantic search.",
+    "techStack": ["Python", "LlamaIndex", "ChromaDB", "HuggingFace", "Sentence-BERT", "RAG", "LLMs"],
+    "githubUrl": "https://github.com/Dzone11/nfhs-rag-assistant",
+    "liveUrl": "",
+    "featured": true
+  },
+  {
+    "id": "credit-card-fraud-detection",
+    "title": "Credit Card Fraud Detection Pipeline",
+    "description": "Anomaly detection system designed to identify fraudulent credit card transactions. Implemented comprehensive data preprocessing and handled extreme class imbalance using SMOTE and cost-sensitive learning techniques. Built an optimized XGBoost classification model to maximize precision and recall for rare fraudulent events.",
+    "techStack": [
+      "Python",
+      "XGBoost",
+      "SMOTE",
+      "scikit-learn",
+      "pandas"
+    ],
+    "githubUrl": "https://github.com/Dzone11/fraud-detection",
+    "liveUrl": "",
+    "featured": true
+  }
+]
