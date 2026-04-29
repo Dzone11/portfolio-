@@ -9,12 +9,21 @@ A minimal, dark-themed personal portfolio built with **Next.js**, **Tailwind CSS
 
 ---
 
+### Screenshots
+<div align="center">
+  <img src="public/screenshot-home.png" width="48%" alt="Homepage Screenshot" />
+  <img src="public/screenshot-about.png" width="48%" alt="About Page Screenshot" />
+</div>
+
+---
+
 ## ✨ Features
 
 - **Dark mode** — elegant, developer-focused design with a cyan accent
-- **Responsive** — mobile-first layout that works on all devices
-- **Animated** — smooth fade-in and hover animations via Framer Motion
+- **Responsive** — mobile-first layout that works perfectly on all devices with hardware-accelerated scrolling
+- **Animated** — smooth fade-in and hover animations via Framer Motion, optimized for varying screen sizes
 - **SEO optimized** — meta tags, Open Graph, and semantic HTML
+- **Comprehensive** — includes sections for Bio, Core Competencies, Educational Qualifications, and Featured Projects
 - **Accessible** — ARIA labels, keyboard navigation, and proper heading hierarchy
 - **Fast** — optimized for Core Web Vitals on Vercel
 
