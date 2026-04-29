@@ -15,7 +15,7 @@ export default function AnimatedSection({
   delay = 0,
 }: AnimatedSectionProps) {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-80px" });
+  const isInView = useInView(ref, { once: true, margin: "-20px" });
 
   return (
     <motion.div

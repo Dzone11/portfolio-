@@ -113,6 +113,27 @@ export default function AboutPage() {
           </AnimatedSection>
         ))}
       </div>
+
+      {/* Education */}
+      <AnimatedSection delay={0.1}>
+        <h3 className="text-xl font-semibold mt-16 mb-8 text-center">
+          Educational <span className="text-gradient">Qualifications</span>
+        </h3>
+      </AnimatedSection>
+      <div className="grid gap-8 sm:grid-cols-2">
+        <AnimatedSection delay={0.2}>
+          <div className="glass rounded-2xl p-6 h-full flex flex-col justify-center text-center sm:text-left">
+            <h4 className="text-lg font-semibold text-foreground mb-2">M.Sc Computer Science - Data Science</h4>
+            <p className="text-base text-accent">Rajiv Gandhi National Institute of Youth Development</p>
+          </div>
+        </AnimatedSection>
+        <AnimatedSection delay={0.3}>
+          <div className="glass rounded-2xl p-6 h-full flex flex-col justify-center text-center sm:text-left">
+            <h4 className="text-lg font-semibold text-foreground mb-2">B.Sc Statistics</h4>
+            <p className="text-base text-accent">St.Thomas College Thrissur (University of Calicut)</p>
+          </div>
+        </AnimatedSection>
+      </div>
     </section>
   );
 }
