@@ -20,13 +20,14 @@ export default function AnimatedSection({
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 30 }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+      initial={{ opacity: 0, y: 20 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
       transition={{
-        duration: 0.6,
+        duration: 0.5,
         delay,
         ease: [0.21, 0.47, 0.32, 0.98],
       }}
+      style={{ willChange: "opacity, transform" }}
       className={className}
     >
       {children}

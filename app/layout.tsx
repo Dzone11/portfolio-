@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -58,6 +58,13 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -65,13 +72,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} h-full antialiased`} data-scroll-behavior="smooth" suppressHydrationWarning>
-      <body className="min-h-full flex flex-col bg-background text-foreground" suppressHydrationWarning>
+      <body className="min-h-full flex flex-col bg-background text-foreground overflow-x-hidden" suppressHydrationWarning>
         {/* Background grid overlay */}
-        <div className="fixed inset-0 bg-grid pointer-events-none" aria-hidden="true" />
+        <div className="fixed inset-0 bg-grid pointer-events-none z-0" aria-hidden="true" />
 
-        {/* Floating orbs */}
-        <div className="orb orb-cyan w-[500px] h-[500px] -top-48 -left-48" aria-hidden="true" />
-        <div className="orb orb-purple w-[400px] h-[400px] top-1/3 -right-32" aria-hidden="true" />
+        {/* Floating orbs — fixed so they never cause layout overflow on mobile */}
+        <div className="orb orb-cyan w-[400px] h-[400px] md:w-[500px] md:h-[500px] -top-32 -left-32" aria-hidden="true" />
+        <div className="orb orb-purple w-[300px] h-[300px] md:w-[400px] md:h-[400px] top-1/3 -right-24" aria-hidden="true" />
 
         <ScrollNavigator />
         <Navbar />
