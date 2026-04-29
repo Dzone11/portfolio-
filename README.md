@@ -12,7 +12,7 @@ A minimal, dark-themed personal portfolio built with **Next.js**, **Tailwind CSS
 ### Screenshots
 <div align="center">
   <img src="public/screenshot-home.png" width="48%" alt="Homepage Screenshot" />
-  <img src="public/screenshot-about.png" width="48%" alt="About Page Screenshot" />
+  <img src="public/screenshot-about.png" width="48%" alt="Contact Page Screenshot" />
 </div>
 
 ---
