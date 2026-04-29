@@ -106,11 +106,6 @@ export default function HomePage() {
                 className="object-cover"
                 priority
               />
-              
-              {/* Fallback text just in case the image hasn't been added yet */}
-              <span className="absolute text-xs text-muted/50 text-center px-4 pointer-events-none">
-                Place 'profile.jpg' in public folder
-              </span>
             </div>
           </div>
         </motion.div>
