@@ -112,12 +112,12 @@ export default function HomePage() {
 
       </div>
 
-      {/* Scroll indicator restored */}
+      {/* Scroll indicator — hidden on mobile (content stacks vertically, indicator gets pushed offscreen) */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1.2 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:block"
       >
         <motion.div
           animate={{ y: [0, 8, 0] }}
